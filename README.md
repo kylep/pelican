@@ -9,18 +9,22 @@ Feel free to use this image, I've shared it on
 [Docker Hub](https://cloud.docker.com/u/kpericak/repository/docker/kpericak/pelican).
 
 
-# Dev Notes
+# Dev Scripts
+There are a few scripts in `bin/` to make working on this easier. They're meant
+to be ran from the project root.
+
 ## Manually upload image to GCP's GCR
-I've got a Trigger in GCP Cloud Builder to do this every git push.
-To manually update the image without pushing to GitHub, run:
 ```bash
-./gcp-build.sh
+bin/gcp-build.sh
 ```
 
 ## Upload to Docker Hub
-I like to share the image here too in case anyone else wants to play with it.
-Its hosted on Google's container registry but I don't want to pay for public
-access.
+I don't want to pay for any public downloads from GCR so I share it on Docker
+Hub using this command:
 ```bash
-./docker-hub-build.sh
+bin/docker-hub-build.sh
 ```
+
+## Local Docker Build
+Subset of the Docker Hub command, this builds the local image but doesn't
+upload it anywhere.
