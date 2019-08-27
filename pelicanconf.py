@@ -17,8 +17,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 # RELATIVE_URLS = True
-LINKS = (('How this site was made', 'pelican-guide'),
-         ('Check out Breqwatr!', 'https://breqwatr.com'))
+LINKS = (('Check out Breqwatr!', 'https://breqwatr.com'),)
 SOCIAL = (('LinkedIn', 'https://ca.linkedin.com/in/kpericak'),
           ('Twitter', 'https://twitter.com/kylepericak'))
 DEFAULT_PAGINATION = 10
