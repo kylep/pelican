@@ -6,9 +6,10 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Kyle Pericak'
 SITENAME = 'kyle.pericak.com'
+THEME = "/theme"
 SITEURL = ''
 PATH = 'content'
-OUTPUT_PATH = 'appengine/blog'
+OUTPUT_PATH = 'output'
 TIMEZONE = 'America/Toronto'
 DEFAULT_LANG = 'en'
 FEED_ALL_ATOM = None
@@ -18,8 +19,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 # RELATIVE_URLS = True
 LINKS = (('Check out Breqwatr!', 'https://breqwatr.com'),)
-SOCIAL = (('LinkedIn', 'https://ca.linkedin.com/in/kpericak'),
-          ('Twitter', 'https://twitter.com/kylepericak'))
+SOCIAL = (('linkedin', 'https://ca.linkedin.com/in/kpericak'),
+          ('twitter', 'https://twitter.com/kylepericak'),
+          ('github', 'https://github.com/kylep/'))
 DEFAULT_PAGINATION = 10
 PANDOC_ARGS = (['--toc', '--template=pandoc-template-toc'])
 MARKDOWN = {
@@ -29,3 +31,10 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {}},
     'output_format': 'html5'}
+
+# voidy config
+SIDEBAR = "sidebar.html"
+STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
+CUSTOM_SIDEBAR_MIDDLES = ("sb_links.html", "sb_taglist.html", )
+SITESUBTITLE = "...Try running it as root?"
+SITETAG = "Tech Blog"
