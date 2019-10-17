@@ -32,6 +32,10 @@ MARKDOWN = {
         'markdown.extensions.meta': {}},
     'output_format': 'html5'}
 
+# plugin settings
+PLUGIN_PATHS = ['/plugins']
+PLUGINS = ['series']
+
 # voidy config
 SIDEBAR = "sidebar.html"
 STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
