@@ -42,3 +42,11 @@ STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
 CUSTOM_SIDEBAR_MIDDLES = ("sb_links.html", "sb_taglist.html", )
 SITESUBTITLE = "...Try running it as root?"
 SITETAG = "Tech Blog"
+
+# extra files (pictures, robots, etc)
+STATIC_PATHS = ['extra']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'extra/favicon-16x16.png': {'path': 'favicon-16x16.png'},
+    'extra/favicon-32x32.png': {'path': 'favicon-32x32.png'}}
