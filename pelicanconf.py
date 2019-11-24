@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 
 
 AUTHOR = 'Kyle Pericak'
-SITENAME = 'kyle.pericak.com'
+SITENAME = 'Kyle Pericak'
 THEME = "/theme"
 SITEURL = ''
 PATH = 'content'
@@ -19,9 +19,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 # RELATIVE_URLS = True
 LINKS = (('Check out Breqwatr!', 'https://breqwatr.com'),)
-SOCIAL = (('linkedin', 'https://ca.linkedin.com/in/kpericak'),
-          ('twitter', 'https://twitter.com/kylepericak'),
-          ('github', 'https://github.com/kylep/'))
 DEFAULT_PAGINATION = 10
 PANDOC_ARGS = (['--toc', '--template=pandoc-template-toc'])
 MARKDOWN = {
@@ -38,13 +35,16 @@ PLUGINS = ['series']
 
 # voidy config
 SIDEBAR = "sidebar.html"
-STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
+STYLESHEET_FILES = (
+    "pygment.css",
+    "voidybootstrap.css",
+    "pericak-override.css")
 CUSTOM_SIDEBAR_MIDDLES = ("sb_links.html", "sb_taglist.html", )
-SITESUBTITLE = "...Try running it as root?"
+SITESUBTITLE = "\"It works in my dev environment.\""
 SITETAG = "Tech Blog"
 
 # extra files (pictures, robots, etc)
-STATIC_PATHS = ['extra']
+STATIC_PATHS = ['images', 'extra']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},

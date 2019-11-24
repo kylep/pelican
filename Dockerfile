@@ -6,7 +6,6 @@ RUN apt-get update \
          python \
          python-pip \
          python-setuptools \
-         vim \
     && rm -rf /var/lib/apt/lists/* \
     && pip install -r requirements.txt \
     && git clone https://github.com/kylep/voidy-bootstrap.git /theme \
